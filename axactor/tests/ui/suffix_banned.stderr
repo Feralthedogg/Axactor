@@ -1,0 +1,13 @@
+error: message method name must not end with _wait/_timeout/_wait_timeout (reserved by generated APIs)
+ --> tests/ui/suffix_banned.rs:9:18
+  |
+9 |     pub async fn test_timeout(&self, _d: Duration) {}
+  |                  ^^^^^^^^^^^^
+
+warning: unused import: `std::time::Duration`
+ --> tests/ui/suffix_banned.rs:2:5
+  |
+2 | use std::time::Duration;
+  |     ^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default

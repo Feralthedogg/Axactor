@@ -1,0 +1,29 @@
+[workspace]
+resolver = "2"
+members = [
+    "axactor",
+    "axactor-macros",
+    "examples/axum_demo",
+    "examples/axum_registry",
+]
+
+[workspace.dependencies]
+axactor = { path = "./axactor" }
+axactor-macros = { path = "./axactor-macros" }
+tokio = { version = "1", features = ["full"] }
+axum = "0.7"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tracing = "0.1"
+tracing-subscriber = "0.3"
+derive_more = "0.99"
+async-trait = "0.1"
+futures = "0.3"
+oneshot = "0.1"
+tower = { version = "0.4", features = ["limit"] }
+
+tower-http = { version = "0.5", features = ["full"] }
+thiserror = "1.0"
+tokio-util = "0.7"
+parking_lot = "0.12"
+

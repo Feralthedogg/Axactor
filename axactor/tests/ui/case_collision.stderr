@@ -1,0 +1,5 @@
+error: Variant name collision detected: 'get__count' maps to already existing variant 'GetCount'
+  --> tests/ui/case_collision.rs:11:18
+   |
+11 |     pub async fn get__count(&self) {}
+   |                  ^^^^^^^^^^
