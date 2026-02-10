@@ -2,6 +2,10 @@
 name = "axum_demo"
 version = "0.1.0"
 edition = "2021"
+description = "Procedural macros for the axactor actor library"
+license = "MIT"
+repository = "https://github.com/Feralthedogg/Axactor"
+readme = "README.md"
 
 [dependencies]
 axactor = { workspace = true }
