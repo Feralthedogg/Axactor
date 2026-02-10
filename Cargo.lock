@@ -57,7 +57,7 @@ name = "axactor"
 version = "0.1.0"
 dependencies = [
  "async-trait",
- "axactor-macros",
+ "axactor-macros 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "axum",
  "derive_more",
  "futures",
@@ -75,6 +75,18 @@ dependencies = [
 [[package]]
 name = "axactor-macros"
 version = "0.1.0"
+dependencies = [
+ "darling",
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
+name = "axactor-macros"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "13d66ba58c07775f96bece1543ed797f719db67008e944c093bd9916c2097937"
 dependencies = [
  "darling",
  "proc-macro2",
